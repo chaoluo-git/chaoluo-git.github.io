@@ -7,15 +7,15 @@ const withNextra = require('nextra')({
   latex: true,
   // 支持静态图片
   staticImage: true,
-  images: {
-     unoptimized: true
-  }
 })
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // next 工程本身配置内容
     reactStrictMode: true,
+    images: {
+       unoptimized: true,
+    }
 }
 
 module.exports = withNextra(nextConfig)
