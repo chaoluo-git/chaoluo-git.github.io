@@ -2,6 +2,7 @@ const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
   defaultShowCopyCode: true,
+  output: export,
   // 支持 latex
   latex: true,
   // 支持静态图片
